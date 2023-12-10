@@ -94,12 +94,8 @@ for line in fil:  # citim
     bid.append((ulsa, int(doi)))
 
 topcardsvalue = sorted(cardsvalue)
-settopcardsvalue = set(x for x in topcardsvalue)
 
-print(len(topcardsvalue), len(settopcardsvalue), len(cards))
-print(cards)
-print(bid)
-print(topcardsvalue)
+
 rezultat = 0
 
 for x, y in bid:
