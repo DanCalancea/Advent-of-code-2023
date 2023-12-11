@@ -44,20 +44,21 @@ for x in starts:
             start = catre
 
     rezultate.append(rezultat)
-
-a = min(rezultate)
+minrez=min(rezultate)
 divizor = 1
-for j in range(2, a // 2):  # cmmdc
+for j in range(2,  minrez // 2):  # cmmdc
     di = True
     for x in rezultate:
-        if x // j != x / j: di = False
+        if x // j != x / j:
+            di = False
+            break
     if di: divizor = j
 
 rezultat = rezultate[0]
 for i in range(1, len(rezultate)):
-    rezultat *= rezultate[i] / divizor
+    rezultat *= rezultate[i] // divizor
 
 if parttwo:
-    print('rezultat partea a 2a :', int(rezultat))
+    print('rezultat partea a 2a :', rezultat)
 else:
     print('rezultat partea a 1a :', rezultat)
