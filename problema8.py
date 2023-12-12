@@ -44,8 +44,10 @@ for x in starts:
             start = catre
 
     rezultate.append(rezultat)
+
 minrez=min(rezultate)
 divizor = 1
+
 for j in range(2,  minrez // 2):  # cmmdc
     di = True
     for x in rezultate:
