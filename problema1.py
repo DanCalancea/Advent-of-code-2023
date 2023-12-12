@@ -30,8 +30,8 @@ for line in fil:  # citim
             unu = i + 1
             max = a
 
-    nr = nr + unu
+    nr += unu
     
-    sum+= nr
+    sum += nr
 
 print('rezultat partea 2:', sum)
