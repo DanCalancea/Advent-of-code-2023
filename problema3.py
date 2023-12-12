@@ -2,6 +2,7 @@ import sys, fileinput
 
 
 def verific(x, y):
+
     for i in (-1, 0, 1):
         for j in (-1, 0, 1):
             if intrare[x + i][y + j] == '*':
@@ -49,17 +50,16 @@ for y in range(1, len(intrare) - 1):
             if numar == "": continue
             if valid:
                 matrix[ux][uy] += numar + ','
-                print(numar)
-
             numar = ''
             valid = False
 
 for i in range(len(matrix)):
+
     for j in range(len(matrix[1])):
+
         no = []
         if len(matrix[i][j]) == 0: continue
         no = matrix[i][j].split(',')
-        print(no)
         if len(no) < 3: continue
         sum += int(no[0]) * int(no[1])
 
