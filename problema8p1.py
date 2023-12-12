@@ -1,6 +1,5 @@
 import sys, fileinput
 
-
 parttwo = False
 rezultat=0
 first=True
@@ -33,6 +32,7 @@ for line in fil:  # citim
 indicator=0
 destination=False
 start='AAA'
+
 while not destination:
     catre=traseu[start][direction[indicator]]
     rezultat+=1
@@ -41,9 +41,6 @@ while not destination:
     else :
         indicator = indicator + 1 if indicator <len(direction)-1 else 0
         start=catre
-
-
-
 
 
 if parttwo:
