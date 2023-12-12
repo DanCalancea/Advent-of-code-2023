@@ -95,7 +95,6 @@ for line in fil:  # citim
 
 topcardsvalue = sorted(cardsvalue)
 
-
 rezultat = 0
 
 for x, y in bid:
